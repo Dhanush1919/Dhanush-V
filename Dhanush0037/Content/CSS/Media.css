@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+@media screen and (max-width: 992px){
+body {
+    background-color: tan;
+  }
+}
+.block
+{
+    background-color:red;
+    color : whitesmoke;
+    width: 50%;
+}

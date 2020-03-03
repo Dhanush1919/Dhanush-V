@@ -1,0 +1,153 @@
+<html>
+<head>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            padding: 5px;
+            width: 100%;
+            background-color: salmon;
+        }
+        .align{
+            margin-left: 110px;
+            border: 2px solid black;
+            padding: 20px;
+            width: 80%;
+            background-image : linear-gradient(40deg,orange, lightgreen, yellow);
+        }
+        input{
+              padding :10px;
+        }
+        .name{
+             float: right; 
+        }
+        th{
+              padding: 5px;
+              background-color: orange;
+        }
+    </style>
+</head>
+<title>Student's Feedback</title>
+<body style="background-color: aqua">
+    <div class="align">
+
+    <h1 style="text-align: center">PARTICIPANT'S FEEDBACK</h1>
+  <b> Employee Name:</b> <input type="text" name="fname" size="50px" placeholder="Employee Name" id="id"><br><br>
+   <b> Training Program:</b> <input type="text" name="fname" size="50px" align="center" placeholder="Enter Training Program" id="training">
+  <div class="name"> <b> Email-ID:</b> <input type="e-mail" name="fname" size="50px" placeholder="Enter Email-ID" id="mail"><br><br></div>
+    <table border="1">
+        <th>About Training Program</th>
+        <th>Score</th>
+        <th>Comments</th>
+        <tr>
+                <td>Purpose of the Workshop was met</td>
+                <td><select name="score">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select></td>
+                <td><input type="textarea" style="resize: none"></td>
+              </tr>
+              <tr>
+                    <td>Understanding of the Concepts were clear</td>
+                    <td><select name="score">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select></td>
+                    <td><input type="textarea" style="resize: none"></td>
+                  </tr>
+                  <tr>
+                        <td>Adequate time and structure was provided</td>
+                        <td><select name="score">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                              </select></td>
+                        <td><input type="textarea" style="resize: none"></td>
+                      </tr>
+                      <tr>
+                          <th>About trainer</th>
+                      </tr>
+                      <tr>
+                <td>There was clarity in the content</td>
+                <td><select name="score">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select></td>
+                <td><input type="textarea" style="resize: none"></td>
+                      </tr>
+                      <tr>
+                            <td>Content was apropriately presented</td>
+                            <td><select name="score">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select></td>
+                            <td><input type="textarea" style="resize: none"></td>
+                                  </tr>
+                                  <tr>
+                                        <th>Admin Section</th>
+                                    </tr>
+                                    <tr>
+                                            <td>Venue</td>
+                                            <td><select name="score">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                  </select></td>
+                                            <td><input type="textarea" style="resize: none"></td>
+                                                  </tr>
+                                                  <tr>
+                                                        <td>Stationary Arrangements</td>
+                                                        <td><select name="score">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                              </select></td>
+                                                        <td><input type="textarea" style="resize: none"></td>
+                                                              </tr>
+                                                              <tr>
+                                                                    <td>Seating arrangements</td>
+                                                                    <td><select name="score">
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                          </select></td>
+                                                                    <td><input type="textarea" style="resize: none"></td>
+                                                                          </tr>
+    </table><br><br>
+   <b> Comments:</b><textarea rows="5" cols:"100" placeholder="Enter your Comments" style="resize: none"></textarea><br><br>
+    <b>Rating:</b><br><br>
+         <input type="radio" name="gender" value="male" checked> Poor
+        <input type="radio" name="gender" value="female"> Not bad
+        <input type="radio" name="gender" value="other"> Satisfactory
+        <input type="radio" name="gender" value="other"> Good
+        <input type="radio" name="gender" value="other"> Excellent<br><br>
+    <button onclick="" id="output"; >Submit</button>
+    <br>
+    <script src="./Feedback.js" defer></script>
+    <table id="five" >
+            <th>Employee-Name</th>
+            <th>Training Pro</th>
+            <th>Email-ID</th>
+            <tbody id="Body"></tbody>
+        </table>
+    </div>
+</body>
